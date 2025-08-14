@@ -1,0 +1,9 @@
+stress-ng: info:  [220374] setting to a 700 second (11 mins, 40.00 secs) run per stressor
+stress-ng: info:  [220374] dispatching hogs: 1 memrate
+stress-ng: info:  [220387] memrate: write128nt:        20.00 MB per sec
+stress-ng: info:  [220374] stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+stress-ng: info:  [220374]                           (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [220374] memrate               1    700.51    199.05     24.47         0.00           0.00
+stress-ng: info:  [220374] miscellaneous metrics:
+stress-ng: info:  [220374] memrate               20.00 write128nt MB per sec (geometic mean)
+stress-ng: info:  [220374] successful run completed in 700.51s (11 mins, 40.51 secs)

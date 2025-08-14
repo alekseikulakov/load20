@@ -1,0 +1,20 @@
+performance_sample_count : 10833
+
+No warnings encountered during test.
+
+No errors encountered during test.
+[2025-08-14 17:41:30,461 run_harness.py:166 INFO] Result: result_completed_samples_per_sec: 2978.58, Result is INVALID, 10-min runtime requirement met: False
+
+======================== Result summaries: ========================
+
+ A100-PCIe-80GBx1_TRT-custom_k_99_MaxP-Server:
+   bert-99:
+     performance: result_completed_samples_per_sec: 2978.58, Result is INVALID, 10-min runtime requirement met: False
+
+
+======================== Extra Perf Stats: ========================
+
+ A100-PCIe-80GBx1_TRT-custom_k_99_MaxP-Server:
+    FileNotFoundError: Cannot find perf logs for A100-PCIe-80GBx1_TRT/bert-99/Server at build/artifacts/closed/NVIDIA/results/A100-PCIe-80GBx1_TRT/bert-99/Server/performance/run_1. Non-NVIDIA users ignore this. NVIDIA users run `make pull_artifacts_repo`.
+WARNING: Could not find perf value for requested_server_ttft_latency in file /work/build/logs/2025.08.14-17.38.56/A100-PCIe-80GBx1_TRT/bert-99/Server. Using 0
+    Server 99-percentile latency 80664705451 ns is 620.50 of the target_latency 130000000 ns

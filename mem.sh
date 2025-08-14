@@ -9,15 +9,15 @@ WORKERS=1
 MEM_AVAILABLE_KB=$(awk '/MemAvailable/ { print $2 }' /proc/meminfo)
 MEM_AVAILABLE_MB=$((MEM_AVAILABLE_KB / 1024))
 MEM_TARGET_MB=$((MEM_AVAILABLE_MB * TARGET_PERCENT / 100))
-LOG_FILE_MEM="memtest_$(date +%F_%H-%M-%S).log"
+LOG_FILE_MEM="logs/memtest_$(date +%F_%H-%M-%S).log"
 
-echo "Доступно: $MEM_AVAILABLE_MB MB"
-echo "Цель (20%): $MEM_TARGET_MB MB"
+echo "Avaliable: $MEM_AVAILABLE_MB MB"
+echo "TArget (20%): $MEM_TARGET_MB MB"
 
 
 PER_WORKER_MB=$((MEM_TARGET_MB / WORKERS))
 
-echo "rrrrrrrrrrrrrrrrrrrrr $DURATION"
+echo "TEst duration $DURATION"
 
 # Запуск memrate без vm
 stress-ng --memrate "$WORKERS" \

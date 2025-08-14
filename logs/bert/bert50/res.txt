@@ -1,0 +1,38 @@
+================================================
+Test Parameters Used
+================================================
+samples_per_query : 1
+target_qps : 7000
+target_latency (ns): 130000000
+max_async_queries : 0
+min_duration (ms): 60000
+max_duration (ms): 0
+min_query_count : 1
+max_query_count : 0
+qsl_rng_seed : 3066443479025735752
+sample_index_rng_seed : 10688027786191513374
+schedule_rng_seed : 14962580496156340209
+accuracy_log_rng_seed : 0
+accuracy_log_probability : 0
+accuracy_log_sampling_target : 0
+print_timestamps : 0
+performance_issue_unique : 0
+performance_issue_same : 0
+I20250814 17:50:15.031232  3965 main_bert.cc:190] Finished running actual test.
+performance_issue_same_index : 0
+performance_sample_count : 10833
+
+No warnings encountered during test.
+
+No errors encountered during test.
+[2025-08-14 17:50:15,563 run_harness.py:166 INFO] Result: result_completed_samples_per_sec: 2980.37, Result is INVALID, 10-min runtime requirement met: False
+I20250814 17:50:15.757491  5925 bert_server.cc:147] Engine Path: ./build/engines/A100-PCIe-80GBx1/bert/Server/bert-Server-gpu-int8_S_384_B_512_P_2_vs.custom_k_99_MaxP.plan
+
+======================== Result summaries: ========================
+
+ A100-PCIe-80GBx1_TRT-custom_k_99_MaxP-Server:
+   bert-99:
+     performance: result_completed_samples_per_sec: 2980.37, Result is INVALID, 10-min runtime requirement met: False
+
+
+======================== Extra Perf Stats: ========================
